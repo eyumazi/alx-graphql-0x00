@@ -1,0 +1,40 @@
+query GetPaginatedCharacters {
+  page1: characters(page: 1) {
+    info {
+      count
+      pages
+      next
+      prev
+    }
+    results {
+      id
+      name
+      status
+      image
+    }
+  }
+  page2: characters(page: 2) {
+    results {
+      id
+      name
+      status
+      image
+    }
+  }
+  page3: characters(page: 3) {
+    results {
+      id
+      name
+      status
+      image
+    }
+  }
+  page4: characters(page: 4) {
+    results {
+      id
+      name
+      status
+      image
+    }
+  }
+}
